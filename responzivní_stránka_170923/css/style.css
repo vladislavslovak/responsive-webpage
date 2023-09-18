@@ -1,0 +1,122 @@
+.navigace {
+    background-color: #33292a;
+}
+
+li {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    list-style-type: none;
+}
+
+.hamburger-container {
+    background-color: #33292a;
+}
+
+.hamburger1 {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.hamburger2 {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.hamburger3 {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.box2 {
+    background-color: #fff;
+}
+
+.box3 {
+    background-color: #33292a;
+}
+
+.box4 {
+    background-color: #fff;
+}
+
+.box5 {
+    background-color: #644B4F;
+}
+
+.your-travel-assistant {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.container-about-us {
+    background-color: #fff;
+}
+
+.container-anneliese {
+    background-color: #fff;
+}
+
+.about-us {
+    background-color: #fff;
+}
+
+.anneliese {
+    background-color: #fff;
+}
+
+.yosemite {
+    border-radius: 4px;
+}
+
+.header-leigh {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #000;
+}
+
+.text-leigh {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #000;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .header-leigh {
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 6vw;
+        color: #000;
+    }
+    
+    .text-leigh {
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 3.8vw;
+        color: #000;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .your-travel-assistant {
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 10vw;
+        text-align: right;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,232 @@
+html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navigace {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+li {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hamburger-container {
+    width: 60px;
+    height: 70%;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger1 {
+    height: 20%;
+    width: 100%;
+}
+
+.hamburger2 {
+    height: 20%;
+    width: 100%;
+}
+
+.hamburger3 {
+    height: 20%;
+    width: 100%;
+}
+
+.box1 {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.box2 {
+    position: relative;
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box3 {
+    width: 100%;
+    height: 35vw;
+}
+
+.box4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5 {
+    width: 100%;
+    height: 25vw;
+}
+
+.stan {
+    object-fit: cover;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%; 
+}
+
+.container-your-travel-assistant {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    width: 32%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.your-travel-assistant {
+    margin: 0px;
+    margin-top: auto;
+}
+
+.container-about-us {
+    flex: 50%;
+    position: relative;
+}
+
+.container-anneliese {
+    flex: 50%;
+    position: relative;
+}
+
+.about-us {
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.anneliese {
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+}
+
+.container-trips {
+    display: grid;
+    grid-template-rows: repeat(3, 25vh);
+    grid-template-columns: repeat(3, 20vw);
+    grid-gap: 1em;
+}
+  
+.trip {
+    width: 20vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-picture {
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .box1 {
+        width: 100%;
+        height: 90%;
+        position: relative;
+    }
+    .box2 {
+        height: 190vw;
+    }
+    .container-about-us, .container-anneliese {
+        flex: 100%;
+        height: 100vw;
+    }
+    .about-us {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        height: 100%;
+        width: 80%;
+    }
+    .anneliese {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        height: 55%;
+        width: 80%;
+    }
+    .container-your-travel-assistant {
+        position: absolute;
+        bottom: 25%;
+        right: 15%;
+        width: 50%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .your-travel-assistant {
+        margin-top: auto;
+    }
+    ul {
+        display: none;
+    }
+    /* potřebuji, aby se výška containeru zvětšila s tím, jak se child elementy (.trip)
+    seřadí do sloupce */
+    .container-trips {
+        display: flex;
+        flex-direction: column;
+    }
+    .trip {
+        width: 85vw;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-your-travel-assistant {
+        right: 10%;
+        bottom: 10%;
+    }
+    .hamburger-container {
+        height: 50%;
+        right: 0.5%;
+    }
+    .trip {
+        width: 90vw;
+        height: 30vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger-container {
+        display: none;
+    }
+}
